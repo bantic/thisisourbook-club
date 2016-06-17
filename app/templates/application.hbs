@@ -1,0 +1,15 @@
+{{#paper-sidenav-container class="site-nav-container"}}
+  {{#paper-sidenav class="md-whiteframe-z2 site-sidenav" lockedOpen="gt-sm"
+    open=isSidenavOpen onToggle=(action (mut isSidenavOpen))}}
+
+		{{#paper-toolbar class="site-content-toolbar" tall=true}}
+      <div class="logo layout-column layout-align-center-center">
+        <div>ThisIsOurBook.club</div>
+      </div>
+    {{/paper-toolbar}}
+  {{/paper-sidenav}}
+
+  <div class="flex layout-column" tabindex="-1" role="main">
+    {{outlet}}
+  </div>
+{{/paper-sidenav-container}}
